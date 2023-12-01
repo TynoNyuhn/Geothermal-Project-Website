@@ -24,10 +24,127 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width"
+    />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="stylesheet" href="../src/map/resources/ol.css" />
+    <link rel="stylesheet" href="../src/map/resources/fontawesome-all.min.css" />
+    <link rel="stylesheet" type="text/css" href="../src/map/resources/horsey.min.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../src/map/resources/filter-layer.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../src/map/resources/legend-layer.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../src/map/resources/ol3-search-layer.min.css"
+    />
+    <link rel="stylesheet" href="../src/map/resources/ol-layerswitcher.css" />
+    <link rel="stylesheet" href="../src/map/resources/qgis2web.css" />
+    <style>
+      .ol-geocoder.gcd-gl-container {
+        top: 65px !important;
+        left: 0.5em !important;
+        width: 2.1em !important;
+        height: 2.1em !important;
+      }
+      .ol-geocoder .gcd-gl-container {
+        width: 2.1em !important;
+        height: 2.1em !important;
+      }
+      .ol-geocoder .gcd-gl-control {
+        width: 2.1em !important;
+      }
+      .ol-geocoder .gcd-gl-expanded {
+        width: 15.625em !important;
+        height: 2.1875em;
+      }
+      .ol-touch .ol-geocoder.gcd-gl-container {
+        top: 80px !important;
+      }
+      .ol-geocoder .gcd-gl-btn {
+        width: 1.375em !important;
+        height: 1.375em !important;
+        top: 0.225em !important;
+        background-image: none !important;
+      }
+    </style>
+    <style>
+      .legend-layer {
+        top: 65px;
+        left: 0.5em;
+      }
+      .ol-touch .legend-layer {
+        top: 85px;
+      }
+    </style>
+    <style>
+      .search-layer {
+        top: 100px;
+        left: 0.5em;
+      }
+      .ol-touch .search-layer {
+        top: 130px;
+      }
+    </style>
+    <style>
+      .filter-layer {
+        top: 135px;
+        left: 0.5em;
+      }
+      .ol-touch .filter-layer {
+        top: 165px;
+      }
+    </style>
+    <style>
+      html,
+      body {
+        background-color: #ffffff;
+      }
+      .ol-control button {
+        background-color: #f8f8f8 !important;
+        color: #000000 !important;
+        border-radius: 0px !important;
+      }
+      .ol-zoom,
+      .geolocate,
+      .gcd-gl-control .ol-control {
+        background-color: rgba(255, 255, 255, 0.4) !important;
+        padding: 3px !important;
+      }
+      .ol-scale-line {
+        background: none !important;
+      }
+      .ol-scale-line-inner {
+        border: 2px solid #f8f8f8 !important;
+        border-top: none !important;
+        background: rgba(255, 255, 255, 0.5) !important;
+        color: black !important;
+      }
+    </style>
+    <link href="../src/map/resources/ol-geocoder.min.css" rel="stylesheet" />
+    <style>
+      #map {
+        width: 1956px;
+        height: 1250px;
+      }
+    </style>
     <title>React App</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
+    
     <div id="root"></div>
     <!--
       This HTML file is a template.
@@ -39,5 +156,24 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <!-- <script src="../src/map/resources/qgis2web_expressions.js"></script>
+    <script src="../src/map/resources/polyfills.js"></script>
+    <script src="../src/map/resources/functions.js"></script>
+    <script src="../src/map/resources/ol.js"></script>
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=Element.prototype.classList,URL"></script>
+    <script src="../src/map/resources/horsey.min.js"></script>
+    <script src="../src/map/resources/ol3-search-layer.js"></script>
+    <script src="../src/map/resources/filter-layer.js"></script>
+    <script src="../src/map/resources/legend-layer.js"></script>
+    <script src="../src/map/resources/ol-layerswitcher.js"></script>
+    <script src="../src/map/resources/ol-geocoder.js"></script>
+    <script src="../src/map/layers/OklahomaCounties_1.js"></script>
+    <script src="../src/map/layers/CountyTemperatureGradient_2.js"></script>
+    <script src="../src/map/styles/OklahomaCounties_1_style.js"></script>
+    <script src="../src/map/styles/CountyTemperatureGradient_2_style.js"></script>
+    <script src="../src/map/styles/OrphanWellsOklahoma_3_style.js"></script>
+    <script src="../src/map/layers/layers.js" type="text/javascript"></script>
+    <script src="../src/map/resources/Autolinker.min.js"></script>
+    <script src="../src/map/resources/qgis2web.js"></script> -->
   </body>
 </html>
