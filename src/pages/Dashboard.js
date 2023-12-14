@@ -159,7 +159,7 @@ export default function Dashboard() {
           }}
         >
           <Toolbar />
-          <iframe src="https://main.d2i0l6ukx93ko2.amplifyapp.com/" style={{ top:10, left:0, bottom:0, right:0, width:'100%', height:'100%', border:'none', margin:20, padding:0, overflow:'hidden', zIndex:999999,}}/>
+          <iframe src="https://demo-release.d2i0l6ukx93ko2.amplifyapp.com/" style={{ top:10, left:0, bottom:0, right:0, width:'97%', height:'90%', border:'none', margin:20, padding:0, overflow:'hidden', zIndex:999999,}}/>
         </Box>
       </Box>
     </ThemeProvider>

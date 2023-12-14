@@ -22,7 +22,7 @@ export const mainListItems = (
       <ListItemText primary="Home" />
     </ListItemButton>
     
-    <ListItemButton>
+    {/* <ListItemButton>
       <ListItemIcon>
         <SettingsIcon />
       </ListItemIcon>
@@ -39,7 +39,7 @@ export const mainListItems = (
         <AdminPanelSettingsIcon />
       </ListItemIcon>
       <ListItemText primary="Admin" />
-    </ListItemButton>
+    </ListItemButton> */}
     <ListItemButton href="/">
       <ListItemIcon>
         <PowerSettingsNewIcon />
