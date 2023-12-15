@@ -61,6 +61,9 @@ export default function SignInSide() {
         navigate("/map");
       },
       onFailure: (err) => {
+        if (err.includes("UserNotConfirmedException: User is not confirmed.")) {
+          navigate("/map");
+        }
         console.error("Failure: ", err )
       },
       newPasswordRequired: (data) => {
