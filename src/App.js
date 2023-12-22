@@ -5,6 +5,7 @@ import SignInSide from './pages/SignInSide';
 import SignUp from './pages/SignUp';
 import Datamap from './pages/Datamap';
 import Dashboard from './pages/Dashboard';
+import Admin from './pages/Admin';
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
         <Route path="/login" element={<SignInSide />}/>
         <Route path="/register" element={<SignUp />}/>
         <Route path="/map" element={<Dashboard />}/>
-        <Route path="/test" element={<Datamap />}/>
+        <Route path="/admin" element={<Admin />}/>
+        {/* <Route path="/test" element={<Datamap />}/> */}
       </Routes>
     </Router>
     </>

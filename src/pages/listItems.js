@@ -15,7 +15,7 @@ import PowerSettingsNewIcon from '@mui/icons-material/PowerSettingsNew';
 
 export const mainListItems = (
   <React.Fragment>
-    <ListItemButton>
+    <ListItemButton href="/map">
       <ListItemIcon>
         <DashboardIcon />
       </ListItemIcon>
@@ -33,13 +33,13 @@ export const mainListItems = (
         <BarChartIcon />
       </ListItemIcon>
       <ListItemText primary="About" />
-    </ListItemButton>
-    <ListItemButton>
+    </ListItemButton>  */}
+    <ListItemButton href="/admin">
       <ListItemIcon>
         <AdminPanelSettingsIcon />
       </ListItemIcon>
       <ListItemText primary="Admin" />
-    </ListItemButton> */}
+    </ListItemButton>
     <ListItemButton href="/">
       <ListItemIcon>
         <PowerSettingsNewIcon />

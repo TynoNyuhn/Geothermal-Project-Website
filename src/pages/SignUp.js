@@ -14,6 +14,7 @@ import Container from "@mui/material/Container";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import UserPool from "../middleware/UserPool";
 import { CognitoUserAttribute } from "amazon-cognito-identity-js";
+import { useNavigate } from "react-router-dom";
 
 function Copyright(props) {
   return (
@@ -38,6 +39,8 @@ function Copyright(props) {
 const defaultTheme = createTheme();
 
 export default function SignUp() {
+  const navigate = useNavigate();
+
   const [errMessage, setErrMessage] = React.useState("");
   const [userSignup, setUserSignup] = React.useState(null);
   const handleSubmit =  (event) => {
@@ -72,6 +75,7 @@ export default function SignUp() {
             setErrMessage(err.message);
           } else {
             alert("Success! User has been created.")
+            navigate("/login");
           }
         }
       );
@@ -163,6 +167,11 @@ export default function SignUp() {
                   label="I want to receive inspiration, marketing promotions and updates via email."
                 />
               </Grid> */}
+            </Grid>
+            <Grid container justifyContent="flex-end">
+              <Grid item>
+                <Typography variant="body2">Minimum Password Requirements: 8 letters, 1 captital, 1 lower-case, 1 number, 1 special character</Typography>
+              </Grid>
             </Grid>
             <Grid container justifyContent="flex-end">
               <Grid item>
