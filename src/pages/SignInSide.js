@@ -61,6 +61,10 @@ export default function SignInSide() {
         navigate("/map");
       },
       onFailure: (err) => {
+        if (err == "UserNotConfirmedException: User is not confirmed.") {
+          console.log("peko");
+          navigate("/map");
+        }
         console.error("Failure: ", err )
       },
       newPasswordRequired: (data) => {
