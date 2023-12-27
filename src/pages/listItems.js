@@ -34,12 +34,12 @@ export const mainListItems = (
       </ListItemIcon>
       <ListItemText primary="About" />
     </ListItemButton>  */}
-    <ListItemButton href="/admin">
+    {/* <ListItemButton href="/admin">
       <ListItemIcon>
         <AdminPanelSettingsIcon />
       </ListItemIcon>
       <ListItemText primary="Admin" />
-    </ListItemButton>
+    </ListItemButton> */}
     <ListItemButton href="/">
       <ListItemIcon>
         <PowerSettingsNewIcon />

@@ -93,7 +93,7 @@ const Drawer = styled(MuiDrawer, {
 const defaultTheme = createTheme();
 
 export default function Admin() {
-    const [file, setFile] = useState();
+  const [file, setFile] = useState();
   const handleFileUpload = (event) => {
     //const file = event.target.files[0];
     console.log(file);
@@ -220,9 +220,14 @@ export default function Admin() {
                 justifyContent="center"
               >
                 <form>
-                  <TextField onChange={(event) => setFile(event.target.files[0])} type="file" />
+                  <TextField
+                    onChange={(event) => setFile(event.target.files[0])}
+                    type="file"
+                  />
                 </form>
-                <Button variant="contained" onClick={handleFileUpload}>Update Database</Button>
+                <Button variant="contained" onClick={handleFileUpload}>
+                  Update Database
+                </Button>
               </Stack>
             </Container>
           </Box>
